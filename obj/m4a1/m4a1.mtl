@@ -1,0 +1,6 @@
+# models\weapons\V_models\rif_m4a1\rif_m4a1
+newmtl material_0
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd m4a1_material_0.tga
+

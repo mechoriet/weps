@@ -1,0 +1,6 @@
+# models\weapons\v_models\rif_ak47\ak47
+newmtl material_0
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd ak47_material_0.tga
+
