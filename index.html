@@ -92,6 +92,24 @@
 					scene.add( object );
 
 				});
+				
+				// crate
+				var loader = new THREE.OBJMTLLoader();
+				//loader.load( 'obj/male02/male02.obj', 'obj/male02/male02_dds.mtl', function ( object ) {
+				loader.load( 'obj/moss-crate/moss-crate.obj', 'obj/moss-crate/moss-crate.mtl', function ( object ) {
+					// static-crate translation
+					
+					object.position.x = 0;
+					object.position.y = 0;
+					object.position.z = -200;
+					
+					object.rotation.x = Math.PI * 1.5;
+					//object.rotation.y = Math.PI * .5;
+					object.rotation.z = Math.PI * .5;
+					
+					scene.add( object );
+
+				});
 
 				//
 
@@ -121,8 +139,8 @@
 
 			function onDocumentMouseMove( event ) {
 
-				mouseX = (( event.clientX - windowHalfX ) / 2) / 16;
-				mouseY = (( event.clientY - windowHalfY ) / 2) / 16;
+				mouseX = (( event.clientX - windowHalfX ) / 2)
+				mouseY = (( event.clientY - windowHalfY ) / 2);
 
 			}
 
@@ -137,13 +155,13 @@
 
 			function render() {
 
+			
 				camera.position.x += ( mouseX - camera.position.x ) * .05;
 				camera.position.y += ( - mouseY - camera.position.y ) * .05;
 
 				camera.lookAt( scene.position );
 
 				renderer.render( scene, camera );
-
 			}
 
 		</script>

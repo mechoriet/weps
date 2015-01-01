@@ -1,0 +1,6 @@
+# models/props/crates/wcrate_64x64_moss
+newmtl material_0
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd moss-crate_material_0.tga
+
